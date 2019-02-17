@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--  headはブラウザに表示されないページ情報。headerとは別-->
+    <head>
+        <meta charset="utf-8">
+        
+        <!--  IEはverによって崩れるので互換表示をさせないためのmetaタグ    -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- レスポンシブ用metaタグ
+            viewport...色々なデバイスの画面にどのように表示するか決める設定のこと
+            width=... スマホ・タブの幅に自動で合わせる呪文
+            initial...iOSが横持ち時widh=...の適用を受けないのでそのカバーする呪文
+            shrink-to-fit=noはIOS用書いておくと幸せになる呪文 
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!--   bootstrap     -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- fontawesome 旧 -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!-- タブに表示 -->
+        <title>moku</title>
+        
+        <meta name="description" content="色々な作業を記録しよう！mokuは作業を記録します。また、その作業で出来上がったものを成果物として登録、共有することもできます！">
+        <link rel="stylesheet" href="css/mypage_style.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/moku_logo.jpg" width="100" height="50" class="d-inline-block align-top" alt="ロゴマーク">
+                    </a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                          <li class="nav-item"><a class="nav-link" href="#" id="linkToAccount">アカウント情報</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#" id="linkToSetting">個人設定</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#" id="linkToLogout">ログアウト</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#" id="linkToFaq">よくある質問</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="card" style="width: 300px;">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card-body text-right m-2 p-2" id="greet">
+                              こんにちは、○○さん!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            
+            
+            <h1>○○さんのマイページ<span class="fa fa-cloud my-color-blue" aria-hidden="true"></span></h1>
+                <section>
+                    <img src="img/%E3%82%BF%E3%82%B0%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B32.png" alt="モクタグ">
+                    <img src="img/%E5%A4%A9%E6%B0%97%E3%81%8F%E3%82%82%E3%82%8A%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90%202.png" alt="モクる">
+                    <img src="img/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%B3%E3%81%AE%E7%84%A1%E6%96%99%E7%B4%A0%E6%9D%90.png" alt="成果物">
+                    <img src="img/%E3%83%96%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B33.png" alt="ブックマーク">
+                    <img src="img/%E3%81%AF%E3%81%A6%E3%81%AA%E3%83%9E%E3%83%BC%E3%82%AF%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%20(1).png" alt="よくある質問" >
+                </section>
+            
+            <section>
+                <div class="card text-blue bg-primary mb-3 text-white" style="max-width: 18rem;">
+                  <h4><div class="card-header">Pick UP</div></h4>
+                  <div class="card-body ">
+                    <h5 class="card-title">みんなの成果物を見てみよう！</h5>
+                    <ul>
+                        <li><a href="/users/7/works/20/public" class="text-white">削除テストユーザー</a></li>
+                        <li><a href="/users/6/works/19/public" class="text-white">スイミー</a></li>
+                        <li><a href="/users/4/works/18/public" class="text-white">画像じゃないものを貼ってみる</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+            </section>
+            
+            <section>
+                <h4>moku Just Now</h4>
+                <ul>
+                    <li>19/02/10 14:27 管理者さんがとりあえずMOKUるでMOKUを開始しました！</li>
+                    <li>19/02/10 14:27 管理者さんがとりあえずMOKUるでMOKUを開始しました！</li>
+                    <li>19/02/10 14:27 管理者さんがとりあえずMOKUるでMOKUを開始しました！</li>
+                </ul>
+            </section>
+            
+            <section>
+                <section>
+                    <h4>○○さんのmokuアイテム <span class="fa fa-cloud my-color-blue" aria-hidden="true"></span></h4>
+                        <p>画面下部の「個人設定」から、使用する道具を登録しよう！simple_formatで改行も反映させる</p>
+                </section>
+                
+                <section>
+                    <h4>自己紹介 <span class="fa fa-cloud my-color-blue" aria-hidden="true"></span></h4>
+                        <p>画面下部の「個人設定」から、自己紹介を登録しよう！ここもsimple_format</p>
+                </section>
+                
+                <section>
+                    <h4>アカウントの公開 / 非公開 <span class="fa fa-cloud my-color-blue" aria-hidden="true"></span></h4>
+                        <P>非公開</P>
+                </section>
+            </section>
+            
+            <section>
+                <h2>管理者メニュー <span class="fa fa-cloud my-color-blue" aria-hidden="true"></span></h2>
+                    <ul>
+                        <li>FAQの追加</li>
+                        <li>FAQの編集・削除</li>
+                    </ul>
+            </section>
+            
+            <section>
+                <h1>カレンダー <span class="fa fa-cloud my-color-blue" aria-hidden="true"></span></h1>
+                    <h5><a href="mypage_index.html">これまでの全てのmoku一覧</a></h5>
+                <div class="simple-calendar">
+                  <div class="calendar-heading">
+                    <a href="/mypage?start_date=2019-01-27">Previous</a>
+                    <span class="calendar-title">2月 2019</span>
+                    <a href="/mypage?start_date=2019-03-04">Next</a>
+                  </div>
+
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                          <th>月</th>
+                          <th>火</th>
+                          <th>水</th>
+                          <th>木</th>
+                          <th>金</th>
+                          <th>土</th>
+                          <th>日</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="day wday-1 past prev-month has-events">
+
+                  2019-01-28<br>
+                        <a href="/users/1/mokus/40">とりあえずMOKUる</a><br>
+                </td>            <td class="day wday-2 past prev-month has-events">
+
+                  2019-01-29<br>
+                        <a href="/users/1/mokus/41">とりあえずMOKUる</a><br>
+                        <a href="/users/1/mokus/42">とりあえずMOKUる</a><br>
+                        <a href="/users/1/mokus/43">とりあえずMOKUる</a><br>
+                        <a href="/users/1/mokus/44">とりあえずMOKUる</a><br>
+                        <a href="/users/1/mokus/45">とりあえずMOKUる</a><br>
+                        <a href="/users/1/mokus/46">とりあえずMOKUる</a><br>
+                        <a href="/users/1/mokus/47">とりあえずMOKUる</a><br>
+                        <a href="/users/1/mokus/48">とりあえずMOKUる</a><br>
+                        <a href="/users/1/mokus/49">あたらしいMOKU１</a><br>
+                        <a href="/users/1/mokus/50">とりあえずMOKUる</a><br>
+                </td>            <td class="day wday-3 past prev-month">
+
+                  2019-01-30<br>
+                </td>            <td class="day wday-4 past prev-month">
+
+                  2019-01-31<br>
+                </td>            <td class="day wday-5 past current-month has-events">
+
+                  2019-02-01<br>
+                        <a href="/users/1/mokus/53">とりあえずMOKUる</a><br>
+                </td>            <td class="day wday-6 past current-month">
+
+                  2019-02-02<br>
+                </td>            <td class="day wday-0 past current-month has-events">
+
+                  2019-02-03<br>
+                        <a href="/users/1/mokus/54">とりあえずMOKUる</a><br>
+                </td>        </tr>
+                        <tr>
+                            <td class="day wday-1 past current-month">
+
+                  2019-02-04<br>
+                </td>            <td class="day wday-2 past current-month">
+
+                  2019-02-05<br>
+                </td>            <td class="day wday-3 past current-month has-events">
+
+                  2019-02-06<br>
+                        <a href="/users/1/mokus/59">あたらしいMOKU２</a><br>
+                </td>            <td class="day wday-4 past current-month">
+
+                  2019-02-07<br>
+                </td>            <td class="day wday-5 past current-month">
+
+                  2019-02-08<br>
+                </td>            <td class="day wday-6 past current-month">
+
+                  2019-02-09<br>
+                </td>            <td class="day wday-0 past current-month has-events">
+
+                  2019-02-10<br>
+                        <a href="/users/1/mokus/67">とりあえずMOKUる</a><br>
+                        <a href="/users/1/mokus/68">とりあえずMOKUる</a><br>
+                </td>        </tr>
+                        <tr>
+                            <td class="day wday-1 past current-month">
+
+                  2019-02-11<br>
+                </td>            <td class="day wday-2 past current-month">
+
+                  2019-02-12<br>
+                </td>            <td class="day wday-3 past current-month">
+
+                  2019-02-13<br>
+                </td>            <td class="day wday-4 past current-month">
+
+                  2019-02-14<br>
+                </td>            <td class="day wday-5 past current-month has-events">
+
+                  2019-02-15<br>
+                        <a href="/users/1/mokus/69">とりあえずMOKUる</a><br>
+                </td>            <td class="day wday-6 today start-date current-month">
+
+                  2019-02-16<br>
+                </td>            <td class="day wday-0 future current-month">
+
+                  2019-02-17<br>
+                </td>        </tr>
+                        <tr>
+                            <td class="day wday-1 future current-month">
+
+                  2019-02-18<br>
+                </td>            <td class="day wday-2 future current-month">
+
+                  2019-02-19<br>
+                </td>            <td class="day wday-3 future current-month">
+
+                  2019-02-20<br>
+                </td>            <td class="day wday-4 future current-month">
+
+                  2019-02-21<br>
+                </td>            <td class="day wday-5 future current-month">
+
+                  2019-02-22<br>
+                </td>            <td class="day wday-6 future current-month">
+
+                  2019-02-23<br>
+                </td>            <td class="day wday-0 future current-month">
+
+                  2019-02-24<br>
+                </td>        </tr>
+                        <tr>
+                            <td class="day wday-1 future current-month">
+
+                  2019-02-25<br>
+                </td>            <td class="day wday-2 future current-month">
+
+                  2019-02-26<br>
+                </td>            <td class="day wday-3 future current-month">
+
+                  2019-02-27<br>
+                </td>            <td class="day wday-4 future current-month">
+
+                  2019-02-28<br>
+                </td>            <td class="day wday-5 future next-month">
+
+                  2019-03-01<br>
+                </td>            <td class="day wday-6 future next-month">
+
+                  2019-03-02<br>
+                </td>            <td class="day wday-0 future next-month">
+
+                  2019-03-03<br>
+                </td>        </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+            </section>
+        </main>
+        
+        <footer>
+            <p class="copyright" ><small>&copy; Copyright 2019 moku</small></p>
+        </footer>
+        
+        <!-- jQuery、Popper.js、Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
