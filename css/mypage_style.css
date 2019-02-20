@@ -6,13 +6,16 @@ h1 {
     color: #b7e0f5;
 }
 
+.my-color-reply {
+  color: #f472db
+}
 #greet {
     font-size: 20px;
     text-align: right;
 }
 
 .copyright {
-    border-top: solid 3px #fff;
+    border-top: solid 3px #b7e0f5;
     text-align: center;
 }
             
