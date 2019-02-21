@@ -1,17 +1,31 @@
-h1 {
-    text-align: center;
+
+.my-color-moku {
+  color: #b7e0f5
 }
 
-.my-color-blue {
-    color: #b7e0f5;
+.my-color-work {
+  color:#ffe200
+}
+
+.my-color-bookmark {
+  color:pink
+}
+
+.my-color-tag {
+  color: darkcyan
+}
+
+#greet {
+    font-size: 20px;
+    text-align: right;
 }
 
 .my-color-reply {
   color: #f472db
 }
-#greet {
-    font-size: 20px;
-    text-align: right;
+
+.img-responsive-overwrite{
+    margin: 0 auto;
 }
 
 .copyright {

@@ -34,7 +34,7 @@
     <body>
         <header>
             <div class="container-fluid">
-                <nav class="navbar navbar-expand-sm navbar-light ">
+                <nav class="navbar navbar-expand-sm navbar-light px-0">
                     <a class="navbar-brand" href="index.html">
                         <img src="img/moku_logo.jpg" width="100" height="50" class="d-inline-block align-top" alt="ロゴマーク">
                     </a>
@@ -51,28 +51,52 @@
                     </div>
                 </nav>
             </div>
-            <div class="card">
+            <div class="card text-white bg-info mx-3 mb-3">
                 <div class="card-body" id="greet">こんにちは、ながいなまえのユーザーさん!</div>                
             </div>
         </header>
         
         <main>
-            <h1 class="font-weight-bold">ながいなまえのユーザーさんのマイページ</h1>
+            <h1 class="font-weight-bold text-center">ながいなまえのユーザーさんのマイページ</h1>
             
             <div class="container-fluid pb-4">   
                 <div class="row">
                     <div class="col-12 col-md-6 pb-4">
                         <section>
                             <div class="card">
-                                <div class="card-header">何をしますか？</div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        <span class="fas fa-cloud my-color-blue fa-5x fa-fw faa-bounce animated-hover" aria-hidden="true"><h5>mokuる</h5></span>
-                                        <span class="fas fa-cloud my-color-moku fa-5x fa-fw faa-bounce animated-hover" aria-hidden="true"><h5>mokuる</h5></span>
-                                        <span class="fas fa-bookmark my-color-bookmark fa-5x fa-fw faa-bounce animated-hover" aria-hidden="true"><h5>book mark</h5></span>
-                                        <span class="fas fa-tag my-color-tag fa-5x fa-fw faa-bounce animated-hover" aria-hidden="true"><h5>mokuタグ</h5></span>
-                                        <span class="fas fa-crown my-color-work fa-5x fa-fw faa-bounce animated-hover" aria-hidden="true"><h5>成果物</h5></span>
-                                    </p>
+                                <div class="card-header text-center"><h3>何をしますか？</h3></div>
+                                <div class="card-body pb-1 text-center">
+                                      <span class="fas fa-cloud my-color-moku fa-5x fa-fw m-4 faa-bounce animated-hover" aria-hidden="true">
+                                        <h5>
+                                          <a href="#" class="text-secondary font-weight-bold">
+                                          mokuる
+                                          </a>
+                                        </h5>
+                                      </span>
+                                      
+                                      <span class="fas fa-bookmark my-color-bookmark fa-5x fa-fw m-3 faa-bounce animated-hover" aria-hidden="true">
+                                        <h5>
+                                          <a href="#" class="text-secondary font-weight-bold">
+                                            book mark
+                                          </a>
+                                        </h5>
+                                      </span>
+                                      
+                                      <span class="fas fa-tag my-color-tag fa-5x m-3 faa-bounce animated-hover" aria-hidden="true">
+                                        <h5>
+                                          <a href="#" class="text-secondary font-weight-bold">
+                                            mokuタグ
+                                          </a>
+                                        </h5>
+                                      </span>
+                                      
+                                      <span class="fas fa-crown my-color-work fa-5x fa-fw m-3 faa-bounce animated-hover" aria-hidden="true">
+                                        <h5>
+                                          <a href="#" class="text-secondary font-weight-bold">
+                                            成果物
+                                          </a>
+                                        </h5>
+                                      </span>
                                 </div>
                             </div>
                         </section> 
@@ -81,7 +105,7 @@
                     <div class="col-12 col-md-6 pb-4">
                         <section>
                             <div class="card">
-                              <div class="card-header">自己紹介</div>
+                              <div class="card-header text-center"><h3>自己紹介</h3></div>
                               <div class="card-body">
                                 <p class="card-text">おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</p>
                               </div>
@@ -92,7 +116,7 @@
                     <div class="col-12 col-md-6 pb-4">
                         <section>
                             <div class="card">
-                              <div class="card-header">公開設定</div>
+                              <div class="card-header text-center"><h3>公開設定</h3></div>
                               <div class="card-body">
                                 <p class="card-text">アカウントは現在公開になっています</p>
                               </div>
@@ -103,7 +127,7 @@
                     <div class="col-12 col-md-6 pb-4">
                         <section>
                             <div class="card">
-                              <div class="card-header">mokuアイテム</div>
+                              <div class="card-header text-center"><h3>mokuアイテム</h3></div>
                               <div class="card-body">
                                 <p class="card-text">画面下部の「個人設定」から、使用する道具を登録しよう！simple_formatで改行も反映させる</p>
                               </div>
@@ -116,7 +140,7 @@
                     <div class="col-12 col-md-6 pb-4">
                         <section>
                             <div class="card text-white bg-info">
-                              <h4><div class="card-header">moku JUST NOW</div></h4>
+                              <h4><div class="card-header text-center">moku JUST NOW</div></h4>
                               <div class="card-body">
                                     <ul>
                                         <li>19/02/10 14:27 管理者さんがとりあえずMOKUるでMOKUを開始しました！</li>
@@ -131,9 +155,9 @@
                     <div class="col-12 col-md-6 pb-4">
                         <section>
                             <div class="card text-blue bg-info text-white">
-                              <h4><div class="card-header">PICK UP</div></h4>
+                              <h4><div class="card-header text-center">PICK UP</div></h4>
                               <div class="card-body ">
-                                <h5 class="card-title">みんなの成果物を見てみよう！</h5>
+                                <h5 class="card-title text-center">みんなの成果物を見てみよう！</h5>
                                 <ul>
                                     <li><a href="/users/7/works/20/public" class="text-white">削除テストユーザー</a></li>
                                     <li><a href="/users/6/works/19/public" class="text-white">スイミー</a></li>
@@ -148,7 +172,7 @@
                 <div class="row">
                     <div class="col-12">
                         <section>
-                            <h1>カレンダー</h1>
+                            <h1 class="text-center">カレンダー</h1>
                                 <h5><a href="mypage_index.html">これまでの全てのmoku一覧</a></h5>
                             <div class="simple-calendar">
                               <div class="calendar-heading">
